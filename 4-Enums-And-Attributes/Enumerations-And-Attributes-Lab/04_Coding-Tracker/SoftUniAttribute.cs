@@ -1,0 +1,15 @@
+﻿namespace _04_Coding_Tracker
+{
+    using System;
+
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = true)]
+    public class SoftUniAttribute : Attribute
+    {
+        public SoftUniAttribute(string name)
+        {
+            this.Name = name;
+        }
+
+        public string Name { get; set; }
+    }
+}
